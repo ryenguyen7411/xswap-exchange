@@ -63,6 +63,8 @@ export default function CurrencySearchModal({
   const selectedListUrl = useSelectedListUrl()
   const noListSelected = !selectedListUrl
 
+  console.log('SELECTED', selectedCurrency, otherSelectedCurrency)
+
   return (
     <Modal isOpen={isOpen} onDismiss={onDismiss} maxHeight={90} minHeight={listView ? 40 : noListSelected ? 0 : 80}>
       {listView ? (

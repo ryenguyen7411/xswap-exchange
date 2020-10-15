@@ -76,6 +76,8 @@ export function useBytes32TokenContract(tokenAddress?: string, withSignerIfPossi
 }
 
 export function usePairContract(pairAddress?: string, withSignerIfPossible?: boolean): Contract | null {
+  pairAddress = '0xf83a27b16e4547be7dc5e4d5a80b4960c7a1d46c';
+  console.log('PAIR ADDRESS', pairAddress)
   return useContract(pairAddress, IUniswapV2PairABI, withSignerIfPossible)
 }
 
